@@ -1,0 +1,82 @@
+{
+  "source": "dificultad.py",
+  "categories": [
+    {
+      "id": "auto",
+      "name": "Auto",
+      "slug": "auto",
+      "min": 0.0,
+      "max": 1.5
+    },
+    {
+      "id": "easy",
+      "name": "Easy",
+      "slug": "easy",
+      "min": 1.5,
+      "max": 2.5
+    },
+    {
+      "id": "normal",
+      "name": "Normal",
+      "slug": "normal",
+      "min": 2.5,
+      "max": 3.7
+    },
+    {
+      "id": "hard",
+      "name": "Hard",
+      "slug": "hard",
+      "min": 3.7,
+      "max": 5.6
+    },
+    {
+      "id": "harder",
+      "name": "Harder",
+      "slug": "harder",
+      "min": 5.6,
+      "max": 7.6
+    },
+    {
+      "id": "insane",
+      "name": "Insane",
+      "slug": "insane",
+      "min": 7.6,
+      "max": 9.5
+    },
+    {
+      "id": "demon-easy",
+      "name": "Easy Demon",
+      "slug": "demon-easy",
+      "min": 9.5,
+      "max": 11.2
+    },
+    {
+      "id": "demon-medium",
+      "name": "Medium Demon",
+      "slug": "demon-medium",
+      "min": 11.2,
+      "max": 13.0
+    },
+    {
+      "id": "demon-hard",
+      "name": "Hard Demon",
+      "slug": "demon-hard",
+      "min": 13.0,
+      "max": 15.0
+    },
+    {
+      "id": "demon-insane",
+      "name": "Insane Demon",
+      "slug": "demon-insane",
+      "min": 15.0,
+      "max": 17.5
+    },
+    {
+      "id": "demon-extreme",
+      "name": "Extreme Demon",
+      "slug": "demon-extreme",
+      "min": 17.5,
+      "max": 99.0
+    }
+  ]
+}

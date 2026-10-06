@@ -1,0 +1,24 @@
+# Archivos de código Python (según tu requerimiento)
+*.py
+
+# Bytecode y caché de compilación
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Empaquetado y distribución
+build/
+dist/
+*.egg-info/
+
+# Archivos de entorno y credenciales
+.env
+.env.local
+vpns/
+levels.sqlite

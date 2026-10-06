@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Rated Levels List (ARLL)</title>
+    <link rel="icon" href="assets/difficulties/easy.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img src="assets/difficulties/hard.png" alt="" />
+        <div>
+          <h1>All Rated Levels List <span class="abbr">ARLL</span></h1>
+          <p id="stats">Cargando lista…</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button id="theme" type="button" class="ghost" aria-label="Cambiar tema">Modo claro</button>
+        <button id="reload" type="button">Recargar</button>
+      </div>
+    </header>
+
+    <section class="controls">
+      <label class="search">
+        <span>Buscar</span>
+        <input id="q" type="search" placeholder="Nombre, autor o ID" autocomplete="off" />
+      </label>
+      <label>
+        <span>Orden</span>
+        <select id="sort">
+          <option value="score-desc" selected>Dificultad (difícil → fácil)</option>
+          <option value="score">Dificultad (fácil → difícil)</option>
+          <option value="likes">Likes</option>
+          <option value="downloads">Downloads</option>
+          <option value="stars">Estrellas</option>
+          <option value="name">Nombre</option>
+          <option value="id">ID</option>
+        </select>
+      </label>
+      <label class="check">
+        <input id="autoRefresh" type="checkbox" checked />
+        Auto-recargar
+      </label>
+    </section>
+
+    <nav class="faces" id="faces" aria-label="Filtro de categoría"></nav>
+
+    <main class="board">
+      <div class="cols" aria-hidden="true">
+        <span>#</span>
+        <span></span>
+        <span>Nivel</span>
+        <span class="hide-sm">Autor</span>
+        <span>Dificultad</span>
+        <span class="hide-sm">Oficial</span>
+        <span class="hide-sm">Likes</span>
+        <span class="hide-sm">Downloads</span>
+      </div>
+      <div id="empty" class="empty hidden">No hay niveles con ese filtro.</div>
+      <div id="scroller" class="scroller">
+        <div id="viewport">
+          <div id="list" class="list"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="overlay" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+      <article class="sheet has-thumb" id="sheet"></article>
+    </div>
+
+    <div id="error" class="toast hidden"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

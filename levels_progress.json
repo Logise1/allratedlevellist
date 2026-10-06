@@ -1,0 +1,10 @@
+{
+  "db": "levels.sqlite",
+  "downloaded": 9195,
+  "pending": 46172,
+  "ok_session": 301,
+  "fail_session": 0,
+  "speed_req_s": 1.6,
+  "sqlite_bytes": 2281828352,
+  "updated_at": "2026-10-06T07:52:20"
+}
